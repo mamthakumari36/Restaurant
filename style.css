@@ -1,0 +1,472 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    font-family: monospace;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.slide-container {
+    position: relative;
+}
+
+.slide {
+    width: 1200px;
+    height: 600px;
+    display: flex;
+    position: relative;
+    margin: 0 0 0 -1335px;
+    transition: 5s linear;
+    animation: 15s slide-image infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+.image img {
+    height: 100vh;
+    width: 100vw;
+
+}
+
+@keyframes slide-image {
+
+    0%,
+    10% {
+        left: 0px;
+
+    }
+
+    20%,
+    30% {
+        left: 1335px;
+    }
+
+    60%,
+    70% {
+        left: 1335px;
+    }
+
+    80%,
+    90%,
+    100% {
+        left: 0px;
+    }
+}
+
+.tab-bar {
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    bottom: 480px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: black;
+    position: fixed;
+    opacity: 0.7;
+}
+
+.tab-bar img {
+    height: 200px;
+    width: 200px;
+    cursor: pointer;
+    filter: brightness(150%);
+}
+
+.tab-bar ul li {
+    display: inline;
+    list-style: none;
+    margin-right: 50px;
+}
+
+.tab-bar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    font-weight: 900;
+    position: relative;
+
+}
+
+.tab-bar ul li a::after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    bottom: -8px;
+    width: 0;
+    left: 0;
+    background-color: white;
+    transition: 0.5s;
+    transform: scaleX(70%);
+}
+
+.tab-bar ul li a:hover::after {
+    width: 100%;
+}
+
+.slogan {
+    position: absolute;
+    bottom: 100px;
+    color: white;
+}
+
+.slogan p {
+    text-transform: capitalize;
+    font-size: 60px;
+    margin-left: 100px;
+}
+
+.slogan p span {
+    margin-left: 30px;
+}
+
+.slogan .text {
+    position: relative;
+    text-align: center;
+    opacity: 0;
+}
+
+.slogan .t1 {
+    position: absolute;
+    margin-top: 65px;
+}
+
+.t1 {
+
+    animation: 15s text1 infinite;
+}
+
+.t2 {
+    animation: 15s text2 infinite;
+}
+
+@keyframes text1 {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes text2 {
+    50% {
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.booking-btn {
+    height: 30px;
+    width: 120px;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin-left: 300px;
+    cursor: pointer;
+
+}
+
+.booking-btn a {
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+    font-weight: bolder;
+    transition: 0.8s;
+}
+
+/*
+.booking-btn :hover a{
+    border-radius: 20px;
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+}
+*/
+/* about us page******************************************************************************** */
+
+.about {
+    color: white;
+    font-size: 30px;
+    margin: 20px 0 0 20px;
+    overflow: hidden;
+}
+
+.about h3 span {
+    color: yellow;
+}
+
+.about-grid {
+    float: left;
+    width: 50%;
+    height: 300px;
+
+}
+
+.about-grid h4 {
+    text-transform: capitalize;
+    margin-top: 8px;
+}
+
+.about::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.about-grid p {
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 0.7cm;
+}
+
+.about-grid.right {
+    left: 700px;
+
+}
+
+
+.about-grid img {
+    width: 350px;
+    height: 250px;
+    border-radius: 20px;
+    border: 2px solid white;
+    margin-left: 70px;
+}
+
+
+.img-box {
+    transition: 1s all ease;
+}
+
+.img-box:hover {
+    scale: 1.2;
+}
+
+/*menu items page********************************************************************* */
+
+.menu-page {
+    color: white;
+    font-size: 30px;
+    margin: 0px 0 0 20px;
+}
+
+.menu-page h3 span {
+    color: yellow;
+}
+
+.menu-page p {
+    color: yellow;
+    word-spacing: 0.1cm;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+}
+
+.container {
+    max-width: 1200px;
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px 50px;
+}
+
+.container .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px 50px;
+}
+
+.container .box-container .box {
+    background-color: white;
+    opacity: 0.7;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 1s all ease;
+    display: none;
+}
+
+.container .box-container .box:nth-child(1),
+.container .box-container .box:nth-child(2),
+.container .box-container .box:nth-child(3) {
+    display: inline-block;
+}
+
+.box-container .box:hover {
+    background-color: yellow;
+}
+
+.box-container .box .menu-pic {
+    overflow: hidden;
+}
+
+.box-container .box:hover img {
+    scale: 1.2;
+}
+
+.box-container .box .menu-pic img {
+    width: 100%;
+    object-fit: cover;
+    transition: 1s all ease;
+}
+
+.box-container .box img {
+    width: 250px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+.menu-name h4 {
+    color: black;
+    text-transform: capitalize;
+}
+
+#more-btn {
+    font-size: 20px;
+    font-weight: bolder;
+    text-transform: capitalize;
+    margin-top: 20px;
+    transition: 1s;
+    height: 1cm;
+    width: 3cm;
+    border: 2px solid white;
+}
+
+#more-btn:hover {
+    background-color: red;
+    border: 2px solid white;
+}
+
+/*  reservation page ******************************************************************** */
+.reservation {
+    color: white;
+    font-size: 30px;
+    margin: 0px 0 0 20px;
+}
+
+.reservation .reserve-block {
+    height: 600px;
+    max-width: 750px;
+    border: 1px solid white;
+    margin: 50px 0 0 200px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 0 white;
+}
+
+.reserve-block form {
+    margin: 10px 0 0 130px;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.reserve-block form label span {
+    color: red;
+    font-size: 15px;
+}
+
+.reserve-block form input,
+textarea {
+    text-transform: capitalize;
+    margin: 2px 0 0 0px;
+    height: 25px;
+    width: 450px;
+    background-color: gray;
+    opacity: 0.5;
+    border: 1px solid white;
+    border-radius: 7px;
+    color: white;
+    font-size: 15px;
+}
+
+#table-btn {
+    height: 25px;
+    width: 450px;
+    font-size: 20px;
+    border: 2px solid goldenrod;
+    cursor: pointer;
+    transition: 1.5s ease;
+}
+
+#table-btn:hover {
+    background-color: red;
+    border: 2px solid white;
+}
+
+/* contact page ************************************************************************ */
+
+.contact {
+    color: white;
+    font-size: 30px;
+    margin: 0px 0 0 20px;
+}
+
+.contact h3 span {
+    color: yellow;
+}
+
+.contact p {
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.contact h6 {
+    margin-left: 10px;
+    text-decoration: underline yellow;
+}
+
+
+.contact-icon ul {
+    font-size: 40px;
+    color: black;
+    text-decoration: none;
+    list-style: none;
+    height: 60px;
+    width: 60px;
+
+}
+
+.contact-icon ul li {
+    border: 2px solid white;
+    border-radius: 50%;
+    background-color: yellow;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 35px;
+    padding: 10px;
+    transition: 1s;
+}
+
+.contact-icon ul li:hover {
+    background-color: transparent;
+    color: white;
+}
+
+.contact-name {
+    position: relative;
+    left: 170px;
+    bottom: 104px;
+
+}
+
+.contact-name p {
+    margin: 61px 0 0 0;
+    font-size: 25px;
+}

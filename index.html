@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <!--home page------------------ -->
+
+    <div class="slide-container">
+        <div class="slide">
+            <div class="image">
+                <img src="4-1.jpg" alt="">
+            </div>
+            <div class="image">
+                <img src="restaurant-bg1.jpg" alt="">
+            </div>
+        </div>
+        <div class="tab-bar">
+            <img src="logo.png">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about-pg">About-Us</a></li>
+                <li><a href="#menu-pg">Menu</a></li>
+                <li><a href="#reserve-pg">Reservation</a></li>
+                <li><a href="#contact-pg">Contact</a></li>
+            </ul>
+        </div>
+        <div class="slogan">
+            <p class="text t1">where every flavor<br><span>tells a story...</span></p>
+            <p class="text t2">hundreds of flavors<br><span>under one roof..</span></p>
+            <button class="booking-btn"><a href="#reserve-pg">Book a Table</a></button>
+        </div>
+    </div>
+
+    <!--about page--------------------- -->
+
+    <div class="about" id="about-pg">
+        <h3>About<span>Us</span></h3>
+        <div class="about-grid">
+            <h4>welcome to Delicious</h4>
+            <p>"Here, at Delicious, we understand cravings. We know how important it is to get your food fast,and we
+                provide a very quick service.We provide food in an affordable price with good quality.
+                Our restaurant specializes in tasty food featurning fresh ingredients and masterful preparation by the 'Delicious' culinary team.
+                Its a perfect place to enjoy lunch, dinner with family,friends and colleagues."</p>
+        </div>
+        <div class="about-grid right">
+            <img class="img-box" src="about.jpg">
+        </div>
+    </div>
+
+    <!--menu page----------------------- -->
+
+    <div class="menu-page" id="menu-pg" >
+        <h3>Our<span>Menu</span></h3>
+        <p>Some of the Popular food items of "Delicious"</p>
+        <div class="container">
+            <div class="box-container">
+                <div class="box">
+                    <div class="menu-pic">
+                        <img src="pic1.jpeg">
+                    </div>
+                    <div class="menu-name">
+                        <h4>Fried Fish</h4>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="menu-pic">
+                        <img src="pic2.jpeg">
+                    </div>
+                    <div class="menu-name">
+                        <h4>crab curry</h4>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="menu-pic">
+                        <img src="pic3.jpeg">
+                    </div>
+                    <div class="menu-name">
+                        <h4>chicken biryani</h4>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="menu-pic">
+                        <img src="pic4.jpeg">
+                    </div>
+                    <div class="menu-name">
+                        <h4>butter chicken</h4>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="menu-pic">
+                        <img src="pic5.jpeg">
+                    </div>
+                    <div class="menu-name">
+                        <h4>indian thali</h4>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="menu-pic">
+                        <img src="pic6.jpeg">
+                    </div>
+                    <div class="menu-name">
+                        <h4>butter paneer</h4>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="menu-pic">
+                        <img src="pic7.jpeg">
+                    </div>
+                    <div class="menu-name">
+                        <h4>masala dosa</h4>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="menu-pic">
+                        <img src="pic8.jpeg">
+                    </div>
+                    <div class="menu-name">
+                        <h4>biryani</h4>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="menu-pic">
+                        <img src="pic9.jpeg">
+                    </div>
+                    <div class="menu-name">
+                        <h4>pulav</h4>
+                    </div>
+                </div>
+            </div>
+            <button id="more-btn">see more</button>
+        </div>
+    </div>
+
+    <!--reservation page---------------------- -->
+
+    <div class="reservation" id="reserve-pg">
+        <h3>Reservation</h3>
+        <div class="reserve-block">
+            <form action="">
+                <label for="fname">first name<span>*</span></label>
+                <div class="input"><input type="text" id="fname" required></div><br>
+                <label for="lname">last name</label>
+                <div class="input"><input type="text" id="lname"></div><br>
+                <label for="total-mem">total members<span>*</span></label>
+                <div class="input"><input type="number" id="total-mem" max="5" min="1" required></div><br>
+                <label for="email">email-id<span>*</span></label>
+                <div class="input"><input type="email" id="email" required> </div><br>
+                <label for="phone">phone no<span>*</span></label>
+                <div class="input"><input type="number" id="phone" required></div><br>
+                <label for="date">date & time<span>*</span></label>
+                <div class="input"><input type="datetime-local" id="date" required></div><br>
+                <label for="message">message</label>
+                <div class="input"><textarea name="" id="message" cols="50" rows="10"></textarea>
+                </div>
+                <br>
+                <button id="table-btn">Book Table</button>
+            </form>
+        </div>
+    </div>
+
+    <!--contact page-------------------- -->
+
+    <div class="contact" id="contact-pg">
+        <h3>Contact<span>Us</span></h3>
+        <p>Are you a food lover? If your answer is yes, then in restaurant for you,<br>
+            we serve food's for reasonable prices.</p>
+        <h6>Contact Details..</h6>
+        <div class="contact-icon">
+            <ul>
+                <li><i class='bx bxs-phone-incoming'></i></li>
+                <li><i class='bx bx-envelope'></i></li>
+                <li><i class='bx bx-current-location'></i></li>
+            </ul>
+        </div>
+        <div class="contact-name">
+            <p> +91 1234567890</p>
+            <p>Delicious.food123@gmail.com</p>
+            <p>Book factory,Thanisandra main road, Nagawara junction <br>Karnataka,Bangalore-560077</p>
+        </div>
+    </div>
+
+    <!--scriptin page------------------------ -->
+    <script src="javascript.js"></script>
+</body>
+
+</html>
